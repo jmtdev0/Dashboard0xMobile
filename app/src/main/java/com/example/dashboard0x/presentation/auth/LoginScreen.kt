@@ -66,6 +66,12 @@ fun LoginScreen(
             color = MaterialTheme.colorScheme.primary
         )
 
+        Text(
+            text = "Tuki tuki",
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.secondary
+        )
+
         Spacer(modifier = Modifier.height(32.dp))
 
         OutlinedTextField(
