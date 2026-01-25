@@ -4,5 +4,5 @@ data class Todo(
     val id: String,
     val text: String,
     val completed: Boolean,
-    val createdAt: Long
+    val createdAt: String
 )
