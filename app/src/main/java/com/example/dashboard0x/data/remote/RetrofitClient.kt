@@ -19,6 +19,7 @@ object RetrofitClient {
     }
 
     private val client = OkHttpClient.Builder()
+        // Hola - Holi
         .addInterceptor(loggingInterceptor)
         .connectTimeout(Constants.NETWORK_TIMEOUT_SECONDS, TimeUnit.SECONDS)
         .readTimeout(Constants.NETWORK_TIMEOUT_SECONDS, TimeUnit.SECONDS)
