@@ -8,12 +8,18 @@ android {
     namespace = "com.example.dashboard0x"
     compileSdk = 36
 
+    val dashboardBaseUrl =
+        (project.findProperty("DASHBOARD_BASE_URL") as String?)
+            ?: "https://dashboard0x.netlify.app/"
+
     defaultConfig {
         applicationId = "com.example.dashboard0x"
         minSdk = 30
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
+
+        buildConfigField("String", "BASE_URL", "\"$dashboardBaseUrl\"")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
